@@ -8,8 +8,8 @@
 
 #define gpioInit() sunxi_gpio_init()
 #define gpioCleanup() sunxi_gpio_cleanup()
-#define digitalWrite(pin, value) sunxi_gpio_input(pin, value) # gpio.write(pin, value)
-#define digitalRead(pin) sunxi_gpio_output(pin) # GPIO::read(pin)
+#define digitalWrite(pin, value) sunxi_gpio_output(pin, value)
+#define digitalRead(pin) sunxi_gpio_input(pin)
 #define pinMode(pin, direction) gpio.open(pin, direction)
 
 #endif // __GPIO_H__
