@@ -20,11 +20,19 @@
 #define SETUP_MALLOC_FAIL   2
 #define SETUP_MMAP_FAIL     3
 
-#define HIGH    1
-#define LOW     0
+#ifndef HIGH
+    #define HIGH    1
+#endif 
+#ifndef LOW
+    #define LOW     0
+#endif 
 
-#define INPUT   0
-#define OUTPUT  1
+#ifndef INPUT
+    #define INPUT   0
+#endif
+#ifndef OUTPUT
+    #define OUTPUT  1
+#endif
 #define PER     2
 
 
